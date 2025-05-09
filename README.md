@@ -1,4 +1,3 @@
-```markdown
 # SAP UI5 Walkthrough
 
 This project is a step-by-step walkthrough of building an SAP UI5 application. It is designed to help developers understand the basics of SAP UI5, including its architecture, components, and best practices.
@@ -111,4 +110,3 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 ---
 
 Happy coding!
-```
