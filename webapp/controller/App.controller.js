@@ -1,22 +1,31 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-], 
-    (Controller, MessageToast) => {
+    "sap/ui/model/json/JSONModel",
+],
+    (Controller, MessageToast, JSONModel) => {
         "use strict";
         return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
 
-            onShowHello : function () {
+            onInit: function () {
+                // Set the data model on the view
+                var oData = {
+                    recipient: {
+                        name: "World"
+                    }
+                };
+                var oModel = new JSONModel(oData);
+                this.getView().setModel(oModel);
+            },
+
+            onShowHello: function () {
+
                 MessageToast.show("Hello there!");
             },
 
-            onInit: function () {
-                // This method is called when the controller is instantiated
-                // You can perform initializati on tasks here
-            },
             onExit: function () {
                 // This method is called when the controller is destroyed
                 // You can perform cleanup tasks here
             }
-        }); 
+        });
     });
