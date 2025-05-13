@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/model/json/JSONModel","sap/ui/model/resource/ResourceModel"],function(e,o,t){"use strict";return e.extend("sap.ui.demo.walkthrough.Component",{metadata:{manifest:"json"},init:function(){e.prototype.init.apply(this,arguments);var t={recipient:{name:"UI5"}};var n=new o(t);this.setModel(n)}})});
+//# sourceMappingURL=component.js.map
